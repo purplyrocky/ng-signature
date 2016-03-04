@@ -1,0 +1,26 @@
+{
+  "name": "ng-signature",
+  "homepage": "https://github.com/purplyrocky/ng-signature",
+  "authors": [
+    "Rocky Garcia <purplyrocky@gmail.com>"
+  ],
+  "description": "signature pad directive",
+  "main": "js/signature.js",
+  "moduleType": [],
+  "keywords": [
+    "signature_pad",
+    "directive",
+    "angular"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "signature_pad": "^1.5.3"
+  }
+}

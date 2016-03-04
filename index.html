@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Signature Pad</title>
+
+  <!--Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body ng-app="signature" ng-controller="TestCtrl">
+  <div class="signature-pad">
+    <button ng-click="clear()"><b>X</b></button>
+    <signature-pad on-end="onEnd" clear="clear" height="150" width="810"></signature-pad>
+  </div>
+
+  <!--Angular JS-->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+  <!-- Signature Pad JS -->
+  <script src="bower_components/signature_pad/signature_pad.min.js"></script>
+  <script src="js/signature.js"></script>
+</body>
+
+</html>
