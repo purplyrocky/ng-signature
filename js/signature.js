@@ -1,12 +1,5 @@
 angular
 	.module('signature', [])
-  .controller('TestCtrl', function($scope) {
-  	$scope.url = null;
-  	$scope.onEnd = function(data) {
-    	$scope.url = data;
-      console.log(data);
-    };
-  })
   .directive('signaturePad', ['$window', function($window) {
 
     return {
@@ -16,7 +9,7 @@ angular
       scope: {
         height: '@',
         width: '@',
-      	onEnd: '=',
+				model: '=',
         clear: '='
       },
       controller: function($scope) {
@@ -30,7 +23,7 @@ angular
         });
 
         function onEnd() {
-        	scope.$eval(attrs.onEnd).call(null, scope.pad.toDataURL());
+        	scope.model.value = scope.pad.toDataURL();
         }
 
         if (!scope.height) scope.height = 150;

@@ -7,10 +7,10 @@
   <!--Custom CSS -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body ng-app="signature" ng-controller="TestCtrl">
+<body ng-app="signature" ng-controller="demo">
   <div class="signature-pad">
     <button ng-click="clear()"><b>X</b></button>
-    <signature-pad on-end="onEnd" clear="clear" height="150" width="810"></signature-pad>
+    <signature-pad model="data" clear="clear" height="150" width="810"></signature-pad>
   </div>
 
   <!--Angular JS-->
@@ -18,6 +18,7 @@
   <!-- Signature Pad JS -->
   <script src="bower_components/signature_pad/signature_pad.min.js"></script>
   <script src="js/signature.js"></script>
+  <script src="js/demo.controller.js"></script>
 </body>
 
 </html>
